@@ -1,0 +1,683 @@
+<html class="pixel-ratio-1"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta content="Farm RPG is a simple, mobile-friendly, text-based farming RPG game where you start a farm, fish, craft and explore the world of the game." name="description">
+<meta content="Magic &amp; Wires" name="author">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Farm RPG ">
+<meta property="og:description" content="Farm RPG is a simple, mobile-friendly, text-based farming RPG game where you start a farm, fish, craft and explore the world of the game.">
+<meta property="og:url" content="https://farmrpg.com">
+<meta property="og:site_name" content="Farm RPG">
+<meta property="og:image" content="https://farmrpg.com/img/promo.jpg?1">
+<meta property="og:image:secure_url" content="https://farmrpg.com/img/promo.jpg?1">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="Farm RPG is a simple, mobile-friendly, text-based farming RPG game where you start a farm, fish, craft and explore the world of the game.">
+<meta name="twitter:title" content="Farm RPG">
+<meta name="twitter:site" content="@farmrpg">
+<meta name="twitter:image" content="https://farmrpg.com/img/promo.jpg?1">
+<meta name="twitter:creator" content="@farmrpg">
+<title>Farm RPG</title>
+<link rel="stylesheet" href="dist/css/framework7.ios.css?612">
+<link rel="stylesheet" href="dist/css/framework7.ios.colors.min.css?3">
+<link rel="stylesheet" href="dist/css/progress.min.css">
+<link rel="stylesheet" href="css/my-app-dark.css?v=612">
+<link rel="stylesheet" href="css/xfarm.css?v=612">
+<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Caveat&amp;display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="img/emblem.jpg">
+<link rel="shortcut icon" href="img/emblem01.png" type="image/x-icon">
+<link rel="manifest" href="manifest.php">
+<meta name="apple-mobile-web-app-title" content="Farm RPG">
+<meta name="application-name" content="Farm RPG">
+<meta name="theme-color" content="#90EE90">
+
+<style>
+.page-content { padding-bottom: 50px !important; }
+a { color: #90EE90 }
+a:visited { color: #90EE90 }
+a:hover { color: #90EE90 }
+a:active { color: #90EE90 }
+i.icon.icon-back {
+background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2012%2020'%3E%3Cpath%20d%3D'M10%2C0l2%2C2l-8%2C8l8%2C8l-2%2C2L0%2C10L10%2C0z'%20fill%3D'%2390EE90'%2F%3E%3C%2Fsvg%3E")
+}
+i.icon.icon-bars {
+background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2021%2014'%3E%3Cpath%20fill%3D'%2390EE90'%20d%3D'M0%2C0h2v2H0V0z%20M4%2C0h17v1H4V0z%20M0%2C6h2v2H0V6z%20M4%2C6h17v1H4V6z%20M0%2C12h2v2H0V12z%20M4%2C12h17v1H4V12z'%2F%3E%3C%2Fsvg%3E")
+}
+.button.active { background-color: lightgreen; color:black }
+.button { border: 1px solid lightgreen; color: #90EE90; background-color: #333333 }
+
+    .content-block-title {
+      font-size: 12px;
+    }
+    .item-title {
+      font-size:15px;
+      line-height:18px;
+    }
+    .item-after {
+      font-size:13px;
+    }
+    .card-content-inner {
+      font-size:12px;
+      line-height:13px;
+    }
+    .row {
+      line-height: 20px;
+    }
+    </style>
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-94M1PS2E9X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-94M1PS2E9X');
+</script>
+<meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+<body class="layout-dark framework7-root with-picker-modal" style="-webkit-transform:translateZ(0px);">
+<div class="panel panel-right panel-cover" id="mobilechatpanel" style="overflow-x: hidden">
+<div class="list-block" style="margin-bottom: 0px; margin-top: 5px">
+<div class="content-block-title item-input" style="margin-left:0px; margin-top: 15px; margin-bottom: 15px; text-align:center">
+<input type="hidden" class="chatroom" id="chatroom_mobile" value="giveaways">
+<div style="display:flex; flex-wrap: wrap; justify-content: center; align-items: center; font-size:12px; line-height:25px; ">
+<a href="#" class="cclink cchelp" data-channel="help">Help</a>
+<a href="#" class="cclink ccglobal" data-channel="global">Global</a>
+<a href="#" class="cclink ccspoilers" data-channel="spoilers">Spoilers</a>
+<a href="#" class="cclink cctrivia" data-channel="trivia">Trivia</a>
+<a href="#" class="cclink ccgiveaways cclinkselected" data-channel="giveaways">Giveaways</a>
+<a href="#" class="cclink cctrade" data-channel="trade">Trade</a>
+</div>
+</div>
+<ul>
+
+<li>
+<div class="item-content">
+<div class="item-inner">
+<div class="item-input">
+<input type="text" id="chat_txt_mobile" style="font-size: 12px" placeholder="Say something...">
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="content-block" style="margin-top: 0px" id="chatzoneMobile">
+&nbsp;
+</div>
+</div>
+<div class="panel" id="desktopchatpanel" style="overflow-x: hidden; ">
+<div class="list-block" style="margin-bottom: 0px; margin-top: 5px">
+<div class="content-block-title item-input" style="margin-left:4px; margin-top: 12px; margin-bottom: 10px; text-align:center">
+<input type="hidden" class="chatroom" id="chatroom_desktop" value="giveaways">
+<div style="display:flex; flex-wrap: wrap; justify-content: center; font-size:11px; line-height:20px; ">
+<a href="#" class="cclink cchelp" data-channel="help">Help</a>
+<a href="#" class="cclink ccglobal" data-channel="global">Global</a>
+<a href="#" class="cclink ccspoilers" data-channel="spoilers">Spoilers</a>
+<a href="#" class="cclink cctrivia" data-channel="trivia">Trivia</a>
+<a href="#" class="cclink ccgiveaways cclinkselected" data-channel="giveaways">Giveaways</a>
+<a href="#" class="cclink cctrade" data-channel="trade">Trade</a>
+</div>
+</div>
+<ul>
+
+<li>
+<div class="item-content">
+<div class="item-inner">
+<div class="item-input">
+<input type="text" id="chat_txt_desktop" style="font-size: 12px" placeholder="Say something...">
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="content-block" style="margin-top: 0px" id="chatzoneDesktop">
+		<div class="card">
+			  <div class="card-content">
+
+				  <div class="list-block media-list">
+				      <ul>
+				        <li class="item-content announcement" style="color:#fff;">
+				          <div class="item-inner">
+				            <div class="item-title-row" style="vertical-align: -webkit-baseline-middle; display: inline-block">
+				              <div class="item-description" style="font-size: 12px"><strong>Giveaways:</strong> Use this channel for item giveaways. This is a slow chat in that you can only post every 5 seconds. <br><a href="mailitems.php" class="close-panel" style="color: crimson;font-weight:bold;text-decoration:underline">Mailable Items</a> / <a href="postoffice.php" class="close-panel" style="color: crimson;font-weight:bold;text-decoration:underline">Mailbox</a></div>
+				            </div>
+
+				          </div>
+				        </li>
+				      </ul>
+				    </div>
+
+			  </div>
+			</div>
+
+		
+		<div class="card">
+			  <div class="card-content">
+
+				  <div class="list-block media-list">
+				      <ul>
+				        <li class="item-content announcement" style="color:#fff;">
+				          <div class="item-inner">
+				            <div class="item-title-row" style="vertical-align: -webkit-baseline-middle; display: inline-block">
+				              <div class="item-description" style="font-size: 12px"><strong>Attention:</strong> <a href="wiki.php?page=Giveaways Guide" class="no-animation close-panel" style="color:crimson; font-weight:bold; text-decoration:underline">Giveaways Guide</a>; <a href="item.php?id=881" class="close-panel"><img src="/img/items/2379.png" alt="Thankful Notes" class="itemimgsm"></a><span style="display:none">Thankful Notes</span> Found in <a href="item.php?id=880" class="close-panel"><img src="/img/items/cornucopia.png" alt="Cornucopia 02" class="itemimgsm"></a><span style="display:none">cornucopia 02</span>; gotten from <a href="wiki.php?page=Daily Chores" class="no-animation close-panel" style="color:crimson; font-weight:bold; text-decoration:underline">Daily Chores</a>, Starter pack Purchase, or trade chat; <a href="item.php?id=883" class="close-panel"><img src="/img/items/cranjuice2.png" alt="Cranberry Juice" class="itemimgsm"></a><span style="display:none">cranberry juice</span><a href="wiki.php?page=Cranberry Juice" class="no-animation close-panel" style="color:crimson; font-weight:bold; text-decoration:underline">Cranberry Juice</a></div>
+				            </div>
+
+				          </div>
+				        </li>
+				      </ul>
+				    </div>
+
+			  </div>
+			</div>
+
+		<div class="chat-txt  "><span style="color:gray">07:53:38 AM</span><br><div class="chip   "><div class="chip-media"><img src="img/emblems/7F0987DA-C6CB-4F86-A3E9-3E6E7B3A38DB.png" data-username="Soxboy90" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Soxboy90" class="close-panel cc1009 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Soxboy90</a></strong></div></div> <a href="javascript:flagChat(17398378)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee"><a href="profile.php?user_name=The GdubsMan" style="color:teal" class="close-panel">@The GdubsMan</a> thank you, I appreciate it!</span></div><div class="chat-txt  "><span style="color:gray">07:52:48 AM</span><br><div class="chip vanguard  "><div class="chip-media"><img src="img/emblems/Gdubsmask.png" data-username="The GdubsMan" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=The+GdubsMan" class="close-panel cc1010 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">The GdubsMan</a></strong></div></div> <a href="javascript:flagChat(17398369)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee"><a href="profile.php?user_name=Soxboy90" style="color:teal" class="close-panel">@Soxboy90</a> gave all I had</span></div><div class="chat-txt  "><span style="color:gray">07:52:44 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="Donkie" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Donkie" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Donkie</a></strong></div></div> <a href="javascript:flagChat(17398367)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">can I please have 10 Gouda</span></div><div class="chat-txt  "><span style="color:gray">07:52:34 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="BANGERS" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=BANGERS" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">BANGERS</a></strong></div></div> <a href="javascript:flagChat(17398365)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">Thanks guys, all good for beetles now</span></div><div class="chat-txt  "><span style="color:gray">07:51:43 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="BANGERS" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=BANGERS" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">BANGERS</a></strong></div></div> <a href="javascript:flagChat(17398355)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee"><a href="profile.php?user_name=Daisy321" style="color:teal" class="close-panel">@Daisy321</a> thanksss</span></div><div class="chat-txt  "><span style="color:gray">07:51:42 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="Garrrettt" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Garrrettt" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Garrrettt</a></strong></div></div> <a href="javascript:flagChat(17398354)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">Lf <a href="item.php?id=113" class="close-panel"><img src="/img/items/6033.PNG" alt="Bone" class="itemimgsm"></a><span style="display:none">bone</span></span></div><div class="chat-txt  "><span style="color:gray">07:51:32 AM</span><br><div class="chip   "><div class="chip-media"><img src="img/emblems/7F0987DA-C6CB-4F86-A3E9-3E6E7B3A38DB.png" data-username="Soxboy90" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Soxboy90" class="close-panel cc1009 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Soxboy90</a></strong></div></div> <a href="javascript:flagChat(17398353)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">Can anyone spare 1 mailbox of grapes? 150 for a phr. Thanks :)</span></div><div class="chat-txt  "><span style="color:gray">07:50:23 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="Thanakar" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Thanakar" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Thanakar</a></strong></div></div> <a href="javascript:flagChat(17398342)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">May I please have some apples.</span></div><div class="chat-txt  "><span style="color:gray">07:49:56 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="Tpweber17" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Tpweber17" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Tpweber17</a></strong></div></div> <a href="javascript:flagChat(17398338)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">Thanks <a href="profile.php?user_name=MiseryMe" style="color:teal" class="close-panel">@MiseryMe</a></span></div><div class="chat-txt  "><span style="color:gray">07:49:49 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="BANGERS" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=BANGERS" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">BANGERS</a></strong></div></div> <a href="javascript:flagChat(17398336)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">LF 31 horned beetle please</span></div><div class="chat-txt  "><span style="color:gray">07:49:46 AM</span><br><div class="chip   "><div class="chip-media"><img src="img/emblems/CapyVibGYor96.png" data-username="Capybara Plop" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Capybara+Plop" class="close-panel cc1005 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Capybara Plop</a></strong></div></div> <a href="javascript:flagChat(17398335)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee"><a href="profile.php?user_name=Soxiel" style="color:teal" class="close-panel">@Soxiel</a>  also <a href="https://buddy.farm/i/fancy-box/" target="_blank" rel="noopener noreferrer" class="external chatlink">buddy.farm/i/fancy-box/</a></span></div><div class="chat-txt  "><span style="color:gray">07:48:47 AM</span><br><div class="chip   "><div class="chip-media"><img src="img/emblems/CapyMoonWizard96.png" data-username="Khoi" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Khoi" class="close-panel cc1010 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Khoi</a></strong></div></div> <a href="javascript:flagChat(17398329)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">LF <a href="item.php?id=84" class="close-panel"><img src="/img/items/orangejuice.png" alt="Orange Juice" class="itemimgsm"></a><span style="display:none">Orange Juice</span> <a href="item.php?id=86" class="close-panel"><img src="/img/items/lemonade.png" alt="Lemonade" class="itemimgsm"></a><span style="display:none">Lemonade</span> <a href="item.php?id=508" class="close-panel"><img src="/img/items/ap.png" alt="Arnold Palmer" class="itemimgsm"></a><span style="display:none">Arnold Palmer</span> <a href="item.php?id=379" class="close-panel"><img src="/img/items/8984.png" alt="Apple Cider" class="itemimgsm"></a><span style="display:none">Apple Cider</span> please! Thank you!</span></div><div class="chat-txt  "><span style="color:gray">07:48:17 AM</span><br><div class="chip   "><div class="chip-media"><img src="img/emblems/CapyVibGYor96.png" data-username="Capybara Plop" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Capybara+Plop" class="close-panel cc1005 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Capybara Plop</a></strong></div></div> <a href="javascript:flagChat(17398322)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee"><a href="profile.php?user_name=Soxiel" style="color:teal" class="close-panel">@Soxiel</a> <a href="wiki.php?page=Find It" class="no-animation close-panel" style="color:crimson; font-weight:bold; text-decoration:underline">Find It</a></span></div><div class="chat-txt  "><span style="color:gray">07:48:15 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="Tpweber17" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Tpweber17" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Tpweber17</a></strong></div></div> <a href="javascript:flagChat(17398320)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">LF <a href="item.php?id=84" class="close-panel"><img src="/img/items/orangejuice.png" alt="Orange Juice" class="itemimgsm"></a><span style="display:none">orange juice</span> to grind this quest, anything helps</span></div><div class="chat-txt  "><span style="color:gray">07:48:08 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="Ellie435" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Ellie435" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Ellie435</a></strong></div></div> <a href="javascript:flagChat(17398319)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">LF <a href="item.php?id=314" class="close-panel"><img src="/img/items/ForestIcons_34_t.png" alt="Blue Gel" class="itemimgsm"></a><span style="display:none">Blue Gel</span> not blue goo. 😂</span></div><div class="chat-txt  "><span style="color:gray">07:48:05 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="Danwaid10" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Danwaid10" class="close-panel cc1005 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Danwaid10</a></strong></div></div> <a href="javascript:flagChat(17398318)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">Lf apple cider</span></div><div class="chat-txt  "><span style="color:gray">07:47:53 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="isaacbee" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=isaacbee" class="close-panel cc1005 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">isaacbee</a></strong></div></div> <a href="javascript:flagChat(17398315)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee"><a href="profile.php?user_name=Boypatis" style="color:teal" class="close-panel">@Boypatis</a> I hate to tell you that 93 is roughly only halfway to 99 (if you earned xp at the same rate)</span></div><div class="chat-txt  "><span style="color:gray">07:47:36 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="qtarik2" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=qtarik2" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">qtarik2</a></strong></div></div> <a href="javascript:flagChat(17398314)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">LF <a href="item.php?id=84" class="close-panel"><img src="/img/items/orangejuice.png" alt="Orange Juice" class="itemimgsm"></a><span style="display:none">orange juice</span> <a href="item.php?id=379" class="close-panel"><img src="/img/items/8984.png" alt="Apple Cider" class="itemimgsm"></a><span style="display:none">apple cider</span> trying to level explore before haunted house vanished thanks in advance.</span></div><div class="chat-txt  "><span style="color:gray">07:47:26 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="Ellie435" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Ellie435" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Ellie435</a></strong></div></div> <a href="javascript:flagChat(17398313)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">LF ((Blue Goo)) pls 🙂</span></div><div class="chat-txt  "><span style="color:gray">07:47:22 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="Soxiel" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Soxiel" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Soxiel</a></strong></div></div> <a href="javascript:flagChat(17398311)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">lf Fancy Box</span></div><div class="chat-txt  "><span style="color:gray">07:46:37 AM</span><br><div class="chip   "><div class="chip-media"><img src="img/emblems/ToadstoolRbow96.png" data-username="ohnolookitsgodzilla" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=ohnolookitsgodzilla" class="close-panel cc1010 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">ohnolookitsgodzilla</a></strong></div></div> <a href="javascript:flagChat(17398307)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">LF <a href="item.php?id=110" class="close-panel"><img src="/img/items/5987.PNG" alt="Leather" class="itemimgsm"></a><span style="display:none">Leather</span></span></div><div class="chat-txt  "><span style="color:gray">07:46:15 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="NOTCALEX" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=NOTCALEX" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">NOTCALEX</a></strong></div></div> <a href="javascript:flagChat(17398302)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">LF money any amount</span></div><div class="chat-txt  "><span style="color:gray">07:46:00 AM</span><br><div class="chip   "><div class="chip-media"><img src="img/emblems/bob market sm.gif" data-username="Momoxor" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Momoxor" class="close-panel cc1013 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Momoxor</a></strong></div></div> <a href="javascript:flagChat(17398301)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">LF any spare <a href="item.php?id=33" class="close-panel"><img src="/img/items/8317.png" alt="Onion" class="itemimgsm"></a><span style="display:none">onion</span>/<a href="item.php?id=15" class="close-panel"><img src="/img/items/8290.png" alt="Tomato" class="itemimgsm"></a><span style="display:none">tomato</span> please ❤️</span></div><div class="chat-txt  "><span style="color:gray">07:45:35 AM</span><br><div class="chip   "><div class="chip-media"><img src="img/emblems/RainbowUnicorn96.png" data-username="Boypatis" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Boypatis" class="close-panel cc3 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Boypatis</a></strong></div></div> <a href="javascript:flagChat(17398298)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">Anyone who has foood for apple cider ? .. im 93 now guys almost 99 explore</span></div><div class="chat-txt  "><span style="color:gray">07:44:51 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="Farmer Theo" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Farmer+Theo" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Farmer Theo</a></strong></div></div> <a href="javascript:flagChat(17398288)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee"><a href="profile.php?user_name=Goose" style="color:teal" class="close-panel">@Goose</a> me</span></div><div class="chat-txt  "><span style="color:gray">07:44:41 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="NOTCALEX" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=NOTCALEX" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">NOTCALEX</a></strong></div></div> <a href="javascript:flagChat(17398283)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">someone has extra oranges? hehe</span></div><div class="chat-txt  "><span style="color:gray">07:44:17 AM</span><br><div class="chip   "><div class="chip-media"><img src="img/emblems/Skullish96.png" data-username="Bambidoll" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Bambidoll" class="close-panel cc4 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Bambidoll</a></strong></div></div> <a href="javascript:flagChat(17398276)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">40 apples</span></div><div class="chat-txt  "><span style="color:gray">07:44:09 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="Ciftci Kemal" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Ciftci+Kemal" class="close-panel cc1008 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Ciftci Kemal</a></strong></div></div> <a href="javascript:flagChat(17398273)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">Need 500 <a href="item.php?id=185" class="close-panel"><img src="/img/items/tea.png" alt="Iced Tea" class="itemimgsm"></a><span style="display:none">Iced Tea</span></span></div><div class="chat-txt  "><span style="color:gray">07:43:33 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="Lynel" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Lynel" class="close-panel cc1005 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Lynel</a></strong></div></div> <a href="javascript:flagChat(17398269)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee"><a href="profile.php?user_name=Stressed" style="color:teal" class="close-panel">@Stressed</a> ohhh didn’t realize I needed it to receive it too, thanks!</span></div><div class="chat-txt  "><span style="color:gray">07:43:14 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="BANGERS" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=BANGERS" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">BANGERS</a></strong></div></div> <a href="javascript:flagChat(17398264)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">Just need 41 horned beetle now if poss</span></div><div class="chat-txt  "><span style="color:gray">07:43:14 AM</span><br><div class="chip   "><div class="chip-media"><img src="img/emblems/Mugged96.png" data-username="Hoff86" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Hoff86" class="close-panel cc1010 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Hoff86</a></strong></div></div> <a href="javascript:flagChat(17398265)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee"><a href="profile.php?user_name=Lynel" style="color:teal" class="close-panel">@Lynel</a> you need to be farming 99</span></div><div class="chat-txt  "><span style="color:gray">07:42:59 AM</span><br><div class="chip   staff"><div class="chip-media"><img src="img/emblems/Critterstressed.png" data-username="Stressed" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Stressed" class="close-panel cc53 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Stressed</a></strong></div></div> <a href="javascript:flagChat(17398260)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee"><a href="profile.php?user_name=Lynel" style="color:teal" class="close-panel">@Lynel</a> would need farming 99 to receive Arnold Palmer tho</span></div><div class="chat-txt  "><span style="color:gray">07:42:55 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="BANGERS" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=BANGERS" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">BANGERS</a></strong></div></div> <a href="javascript:flagChat(17398259)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">@Farmer_LAG cheers</span></div><div class="chat-txt  "><span style="color:gray">07:42:35 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="Lynel" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Lynel" class="close-panel cc1005 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Lynel</a></strong></div></div> <a href="javascript:flagChat(17398257)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">Is there anyone that can turn my <a href="item.php?id=86" class="close-panel"><img src="/img/items/lemonade.png" alt="Lemonade" class="itemimgsm"></a><span style="display:none">lemonade</span> into <a href="item.php?id=508" class="close-panel"><img src="/img/items/ap.png" alt="Arnold Palmer" class="itemimgsm"></a><span style="display:none">Arnold Palmer</span>?  I have 550</span></div><div class="chat-txt  "><span style="color:gray">07:42:14 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="Donkie" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Donkie" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Donkie</a></strong></div></div> <a href="javascript:flagChat(17398252)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">lf ropes</span></div><div class="chat-txt  "><span style="color:gray">07:40:57 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="BANGERS" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=BANGERS" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">BANGERS</a></strong></div></div> <a href="javascript:flagChat(17398245)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">Anyone got 100 shiny beetle and 50 horned beetle spare please?</span></div><div class="chat-txt  "><span style="color:gray">07:40:23 AM</span><br><div class="chip   "><div class="chip-media"><img src="img/emblems/ArnoldPalmer96.png" data-username="Proud" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Proud" class="close-panel cc1008 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Proud</a></strong></div></div> <a href="javascript:flagChat(17398243)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">LF <a href="item.php?id=508" class="close-panel"><img src="/img/items/ap.png" alt="Arnold Palmer" class="itemimgsm"></a><span style="display:none">Arnold palmer</span> please and ty</span></div><div class="chat-txt  "><span style="color:gray">07:40:00 AM</span><br><div class="chip   "><div class="chip-media"><img src="img/emblems/ABF7486D-EEB3-4289-939A-325498D90E6D.png" data-username="LuckyGuY" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=LuckyGuY" class="close-panel cc1005 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">LuckyGuY</a></strong></div></div> <a href="javascript:flagChat(17398239)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">spare <a href="item.php?id=41" class="close-panel"><img src="/img/items/6146.PNG" alt="Aquamarine" class="itemimgsm"></a><span style="display:none">Aquamarine</span> please for quest thanks</span></div><div class="chat-txt  "><span style="color:gray">07:39:35 AM</span><br><div class="chip   "><div class="chip-media"><img src="img/emblems/Skullish96.png" data-username="Bambidoll" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Bambidoll" class="close-panel cc4 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Bambidoll</a></strong></div></div> <a href="javascript:flagChat(17398233)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">LF 70 apples only ty in adv</span></div><div class="chat-txt  "><span style="color:gray">07:39:14 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="Tpweber17" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Tpweber17" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Tpweber17</a></strong></div></div> <a href="javascript:flagChat(17398230)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">LF <a href="item.php?id=120" class="close-panel"><img src="/img/items/8272.PNG" alt="Grapes" class="itemimgsm"></a><span style="display:none">grapes</span>, need like 1000 but thankful for any &lt;3</span></div><div class="chat-txt  "><span style="color:gray">07:38:14 AM</span><br><div class="chip   "><div class="chip-media"><img src="img/emblems/CapyVibGYor96.png" data-username="Capybara Plop" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Capybara+Plop" class="close-panel cc1005 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Capybara Plop</a></strong></div></div> <a href="javascript:flagChat(17398216)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee"><a href="profile.php?user_name=isaacbee" style="color:teal" class="close-panel">@isaacbee</a> Yeas, I'm just waiting for free field</span></div><div class="chat-txt  "><span style="color:gray">07:38:08 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="Professor Anthrax" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Professor+Anthrax" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Professor Anthrax</a></strong></div></div> <a href="javascript:flagChat(17398215)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee"><a href="profile.php?user_name=Hikki77" style="color:teal" class="close-panel">@Hikki77</a> hahaha it’s alright. I got the name from a movie called yellow beard. It’s a cheech and Chong / Monty python movie</span></div><div class="chat-txt  "><span style="color:gray">07:37:24 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="Donkie" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Donkie" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Donkie</a></strong></div></div> <a href="javascript:flagChat(17398208)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">thanks a lot lilaq</span></div><div class="chat-txt  "><span style="color:gray">07:37:06 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="LeighB" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=LeighB" class="close-panel cc1009 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">LeighB</a></strong></div></div> <a href="javascript:flagChat(17398202)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">lf <a href="item.php?id=285" class="close-panel"><img src="/img/items/caterpillar.png" alt="Caterpillar" class="itemimgsm"></a><span style="display:none">caterpillar</span> for quest plz</span></div><div class="chat-txt  "><span style="color:gray">07:36:35 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="isaacbee" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=isaacbee" class="close-panel cc1005 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">isaacbee</a></strong></div></div> <a href="javascript:flagChat(17398193)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee"><a href="profile.php?user_name=Capybara Plop" style="color:teal" class="close-panel">@Capybara Plop</a> Now we should be on the same step of the quest</span></div><div class="chat-txt  "><span style="color:gray">07:36:09 AM</span><br><div class="chip   "><div class="chip-media"><img src="img/emblems/LimaBean96.png" data-username="Citherine" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Citherine" class="close-panel cc1009 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Citherine</a></strong></div></div> <a href="javascript:flagChat(17398185)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee"><a href="profile.php?user_name=walkinator" style="color:teal" class="close-panel">@walkinator</a> ty 💚 do you want more veggies?</span></div><div class="chat-txt  "><span style="color:gray">07:36:08 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="kebabthrower" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=kebabthrower" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">kebabthrower</a></strong></div></div> <a href="javascript:flagChat(17398184)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">lf <a href="item.php?id=172" class="close-panel"><img src="/img/items/5996.png" alt="Gold Feather" class="itemimgsm"></a><span style="display:none">gold feather</span> pls</span></div><div class="chat-txt  "><span style="color:gray">07:35:39 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="Donkie" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Donkie" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Donkie</a></strong></div></div> <a href="javascript:flagChat(17398178)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">LF 3 mug of beers. Please help for quesline :3</span></div><div class="chat-txt  "><span style="color:gray">07:35:31 AM</span><br><div class="chip   "><div class="chip-media"><img src="/img/emblems/def.png" data-username="Hikki77" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=Hikki77" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">Hikki77</a></strong></div></div> <a href="javascript:flagChat(17398177)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee"><a href="profile.php?user_name=Professor Anthrax" style="color:teal" class="close-panel">@Professor Anthrax</a> yah but dont mind just me being random</span></div><div class="chat-txt  "><span style="color:gray">07:35:12 AM</span><br><div class="chip   "><div class="chip-media"><img src="img/emblems/Lemon96.png" data-username="realm grinder" class="cq"></div><div class="chip-label"><strong><a href="profile.php?user_name=realm+grinder" class="close-panel cc32 " style="overflow-x:hidden;max-width:140px;display:inline-block;text-overflow: ellipsis;">realm grinder</a></strong></div></div> <a href="javascript:flagChat(17398170)"><i class="f7-icons color-blue" style="font-size:11px">flag_fill</i></a> <br><span style="color:#eee">LF lemonade pls</span></div><br><a href="chatlog.php?channel=giveaways" class="button close-panel">View Chat Log</a></div>
+</div>
+<div class="views">
+<div class="panel-overlay"></div>
+<div class="panel panel-left panel-cover" style="background-color:transparent">
+<div class="view view-left navbar-through" data-page="index-left">
+<div class="navbar">
+<div class="navbar-inner">
+<div class="left"></div>
+<div class="center sliding" style="left: 0px;">Navigation</div>
+<div class="right"></div>
+</div>
+</div>
+<div class="pages">
+<div data-page="index-left" class="page" style="margin-top: 20px;">
+<div class="page-content">
+<div class="list-block" style="margin-top:24px">
+<ul>
+<li>
+<a href="index.php" data-view=".view-main" class="item-link close-panel">
+<div class="item-content">
+<div class="item-inner">
+<div class="item-title"><i class="fa fa-fw fa-home"></i>&nbsp; Home</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="profile.php" data-view=".view-main" class="item-link close-panel">
+<div class="item-content">
+<div class="item-inner">
+<div class="item-title"><i class="fa fa-fw fa-user"></i>&nbsp; My Profile</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="inventory.php" data-view=".view-main" class="item-link close-panel">
+<div class="item-content">
+<div class="item-inner">
+<div class="item-title"><i class="fa fa-fw fa-list"></i>&nbsp; My Inventory</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="workshop.php" data-view=".view-main" class="item-link close-panel">
+<div class="item-content">
+<div class="item-inner">
+<div class="item-title"><i class="fa fa-fw fa-wrench"></i>&nbsp; My Workshop</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="postoffice.php" data-view=".view-main" class="item-link close-panel">
+<div class="item-content">
+<div class="item-inner">
+<div class="item-title"><i class="fa fa-fw fa-inbox"></i>&nbsp; My Mailbox</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="messages.php" data-view=".view-main" onclick="$('#urm').hide()" class="item-link close-panel">
+<div class="item-content">
+<div class="item-inner">
+<div class="item-title"><i class="fa fa-fw fa-envelope"></i>&nbsp; My Messages <span id="urm"></span></div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="friends.php" data-view=".view-main" class="item-link close-panel">
+<div class="item-content">
+<div class="item-inner">
+<div class="item-title"><i class="fa fa-fw fa-group"></i>&nbsp; My Friends <span id="fol"> (1)</span></div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="settings.php" data-view=".view-main" class="item-link close-panel">
+<div class="item-content">
+<div class="item-inner">
+<div class="item-title"><i class="fa fa-fw fa-gear"></i>&nbsp; My Settings</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="town.php" data-view=".view-main" class="item-link close-panel">
+<div class="item-content">
+<div class="item-inner">
+<div class="item-title"><i class="fa fa-fw fa-building-o"></i>&nbsp; Town</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="wiki.php" data-view=".view-main" class="item-link close-panel">
+<div class="item-content">
+<div class="item-inner">
+<div class="item-title"><i class="fa fa-fw fa-book"></i>&nbsp; Library</div>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="about.php" data-view=".view-main" class="item-link close-panel">
+<div class="item-content">
+<div class="item-inner">
+<div class="item-title"><i class="fa fa-fw fa-info-circle"></i>&nbsp; About / Updates</div>
+</div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="logout.php" data-view=".view-main" class="item-link close-panel">
+<div class="item-content">
+<div class="item-inner">
+<div class="item-title"><i class="fa fa-fw fa-close"></i>&nbsp; Logout</div>
+</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+<div align="center">
+<img src="img/logo_white_reg.png?9?612" style="width: 90%">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="view view-main navbar-through" id="fireworks" data-page="fishing">
+<div class="navbar">
+
+<div class="navbar-inner navbar-on-left">
+        <div class="left"><a href="index.php" class="link no-animation"> <i class="icon icon-back"></i><span>Back</span></a></div>
+        <div class="center sliding" style="left: -28.5px; transform: translate3d(-389.5px, 0px, 0px);">Fishing</div>
+        <div class="right"><a href="x" data-panel="left" class="link open-panel icon-only"><i class="icon icon-bars"></i></a></div>
+    </div><div class="navbar-inner navbar-on-center">
+        <div class="left"><a href="fish.php" class="link no-animation"> <i class="icon icon-back"></i><span>Back</span></a></div>
+        <div class="center sliding" style="left: -28.5px; transform: translate3d(0px, 0px, 0px);">Farm Pond&nbsp;<a href="location.php?type=fishing&amp;id=2"><i class="f7-icons" style="font-size:15px;font-weight:bold">info</i></a></div>
+        <div class="right"><a href="x" data-panel="left" class="link open-panel icon-only close-picker"><i class="icon icon-bars"></i></a></div>
+    </div></div>
+<div class="pages">
+
+<div data-page="fish" class="page page-on-left">
+        <div class="page-content">
+            <div class="content-block">
+							
+
+                
+        <div class="content-block-title">Go Fishing</div>
+				<div class="card">
+				  <div class="card-content">
+				    <div class="card-content-inner">
+						There are plenty of places to cast a line and fish a while.  The number to the right of each fishing spot is your best streak in that spot.
+				    </div>
+				  </div>
+				</div>
+				
+				<div class="content-block-title">Fishing Locations</div>
+				<div class="card">
+				  <div class="card-content">
+				  
+					<div class="list-block">
+					  <ul>
+						
+                              <li>
+                    <a href="fishing.php?id=2" data-view=".view-main" class="item-link close-panel">
+                    <div class="item-content">
+                      <div class="item-media"><img src="/img/items/pond.png" class="itemimg"></div>
+                      <div class="item-inner">
+                      <div class="item-title">Farm Pond<br><span style="font-size: 11px">Your own private fishing hole</span></div>
+                        <div class="item-after" style="font-size:11px">296</div>
+                      </div>
+                    </div>
+                    </a>
+                  </li>
+                              <li>
+							<a href="fishing.php?id=1" data-view=".view-main" class="item-link close-panel">
+							<div class="item-content ">
+							  <div class="item-media"><img src="/img/items/pond.png" class="itemimg"></div>
+							  <div class="item-inner">
+								<div class="item-title">Small Pond<br><span style="font-size: 11px">Small freshwater fishing pond</span></div>
+                  <div class="item-after" style="font-size:11px">218</div>
+							  </div>
+							</div>
+							</a>
+						</li>
+                        <li>
+							<a href="fishing.php?id=3" data-view=".view-main" class="item-link close-panel">
+							<div class="item-content ">
+							  <div class="item-media"><img src="/img/items/fpond.png" class="itemimg"></div>
+							  <div class="item-inner">
+								<div class="item-title">Forest Pond<br><span style="font-size: 11px">A shaded freshwater fishing pond</span></div>
+                  <div class="item-after" style="font-size:11px">100</div>
+							  </div>
+							</div>
+							</a>
+						</li>
+                        <li>
+							<a href="fishing.php?id=4" data-view=".view-main" class="item-link close-panel">
+							<div class="item-content ">
+							  <div class="item-media"><img src="/img/items/lake.png" class="itemimg"></div>
+							  <div class="item-inner">
+								<div class="item-title">Lake Tempest<br><span style="font-size: 11px">A large fishing lake</span></div>
+                  <div class="item-after" style="font-size:11px">215</div>
+							  </div>
+							</div>
+							</a>
+						</li>
+                        <li>
+							<a href="fishing.php?id=5" data-view=".view-main" class="item-link close-panel">
+							<div class="item-content ">
+							  <div class="item-media"><img src="/img/items/island.png" class="itemimg"></div>
+							  <div class="item-inner">
+								<div class="item-title">Small Island<br><span style="font-size: 11px">A small tropical island off the coast</span></div>
+                  <div class="item-after" style="font-size:11px">36</div>
+							  </div>
+							</div>
+							</a>
+						</li>
+                        <li>
+							<a href="fishing.php?id=6" data-view=".view-main" class="item-link close-panel">
+							<div class="item-content ">
+							  <div class="item-media"><img src="/img/items/river.png" class="itemimg"></div>
+							  <div class="item-inner">
+								<div class="item-title">Crystal River<br><span style="font-size: 11px">A fast flowing river</span></div>
+                  <div class="item-after" style="font-size:11px">50</div>
+							  </div>
+							</div>
+							</a>
+						</li>
+                        <li>
+							<a href="fishing.php?id=7" data-view=".view-main" class="item-link close-panel">
+							<div class="item-content ">
+							  <div class="item-media"><img src="/img/items/beach.png" class="itemimg"></div>
+							  <div class="item-inner">
+								<div class="item-title">Emerald Beach<br><span style="font-size: 11px">A quiet beach full of shells</span></div>
+                  <div class="item-after" style="font-size:11px">25</div>
+							  </div>
+							</div>
+							</a>
+						</li>
+                        <li>
+							<a href="fishing.php?id=8" data-view=".view-main" class="item-link close-panel">
+							<div class="item-content ">
+							  <div class="item-media"><img src="/img/items/ocean.png" class="itemimg"></div>
+							  <div class="item-inner">
+								<div class="item-title">Vast Ocean<br><span style="font-size: 11px">Nothing but water every direction</span></div>
+                  <div class="item-after" style="font-size:11px">30</div>
+							  </div>
+							</div>
+							</a>
+						</li>
+                        <li>
+							<a href="item.php?id=220" data-view=".view-main" class="item-link close-panel">
+							<div class="item-content disabled">
+							  <div class="item-media"><img src="/img/items/blank.png" class="itemimg"></div>
+							  <div class="item-inner">
+								<div class="item-title">???<br><span style="font-size: 11px"><span style="color:teal">Missing Required Item</span><br>Tap for more info</span></div>
+                  <div class="item-after" style="font-size:11px"></div>
+							  </div>
+							</div>
+							</a>
+						</li>
+                        <li>
+							<a href="item.php?id=313" data-view=".view-main" class="item-link close-panel">
+							<div class="item-content disabled">
+							  <div class="item-media"><img src="/img/items/blank.png" class="itemimg"></div>
+							  <div class="item-inner">
+								<div class="item-title">???<br><span style="font-size: 11px"><span style="color:teal">Missing Required Item</span><br>Tap for more info</span></div>
+                  <div class="item-after" style="font-size:11px"></div>
+							  </div>
+							</div>
+							</a>
+						</li>
+                        <li>
+							<a href="item.php?id=476" data-view=".view-main" class="item-link close-panel">
+							<div class="item-content disabled">
+							  <div class="item-media"><img src="/img/items/blank.png" class="itemimg"></div>
+							  <div class="item-inner">
+								<div class="item-title">???<br><span style="font-size: 11px"><span style="color:teal">Missing Required Item</span><br>Tap for more info</span></div>
+                  <div class="item-after" style="font-size:11px"></div>
+							  </div>
+							</div>
+							</a>
+						</li>
+                        <li>
+							<a href="item.php?id=701" data-view=".view-main" class="item-link close-panel">
+							<div class="item-content disabled">
+							  <div class="item-media"><img src="/img/items/blank.png" class="itemimg"></div>
+							  <div class="item-inner">
+								<div class="item-title">???<br><span style="font-size: 11px"><span style="color:teal">Missing Required Item</span><br>Tap for more info</span></div>
+                  <div class="item-after" style="font-size:11px"></div>
+							  </div>
+							</div>
+							</a>
+						</li>
+                       
+            </ul>   
+           </div>
+          </div></div>
+          
+          
+          <div class="content-block-title">Fishing Charters</div>
+          <div class="card">
+            <div class="card-content">
+              <div class="list-block disable-select">
+              <ul>
+                                           <li>
+                           <a href="charter.php" data-view=".view-main" class="item-link close-panel">
+                           <div class="item-content">
+                             <div class="item-media"><img src="/img/items/charter.png" class="itemimg"></div>
+                             <div class="item-inner">
+                             <div class="item-title">Fishing Charters<br><span style="font-size: 11px">Hire a Charter to fish for you</span></div>
+                               <div class="item-after"></div>
+                             </div>
+                           </div>
+                           </a>
+                         </li>
+              </ul>
+            </div>
+            </div>
+          </div>
+              
+                       
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				  
+				
+            </div>
+        </div>
+    </div><div data-page="fishing" class="page page-on-center">
+        <div class="page-content disable-select">
+            <div class="content-block">
+              
+                            
+              <div style="height:140px; text-align:center; padding-top:5px; border-bottom: 1px solid #999999">
+                <span id="consoletxt" style=""><br><span style="font-size:11px">You caught something!</span><br><img src="/img/items/7736.PNG" class="itemimg"><br>Largemouth Bass<span style="display:none">
+          <div id="fishcnt">2,417</div>
+          <div id="fishingpb">22.66</div>
+          <div id="staminacnt">106</div>
+        </span></span>
+              </div>
+              
+              <div id="water" style="background-color:#37b1f;opacity:0.6;">
+                <div id="fishinwater" style="position:relative;">
+                  <div class="row no-gutter">
+                    <div class="col-25 fishcell"><img src="/img/items/fish.png" class="fish f11" style="display: none;"></div>
+                    <div class="col-25 fishcell"><img src="/img/items/fish.png" class="fish f12" style="display: none; animation: auto ease 0s 1 normal none running none;"></div>
+                    <div class="col-25 fishcell"><img src="/img/items/fish.png" class="fish f13" style="display: none;"></div>
+                    <div class="col-25 fishcell"><img src="/img/items/fish.png" class="fish f14" style="display: none;"></div>
+                  </div>
+                  <div class="row no-gutter">
+                    <div class="col-25 fishcell"><img src="/img/items/fish.png" class="fish f21" style="display: none; animation: auto ease 0s 1 normal none running none;"></div>
+                    <div class="col-25 fishcell"><img src="/img/items/fish.png" class="fish f22" style="display: none; animation: auto ease 0s 1 normal none running none;"></div>
+                    <div class="col-25 fishcell"><img src="/img/items/fish.png" class="fish f23" style="display: none;"></div>
+                    <div class="col-25 fishcell"><img src="/img/items/fish.png" class="fish f24" style="display: none;"></div>
+                  </div>
+                  <div class="row no-gutter">
+                    <div class="col-25 fishcell"><img src="/img/items/splash.png" class="fish f31" style="display: none; animation: auto ease 0s 1 normal none running none;"></div>
+                    <div class="col-25 fishcell"><img src="/img/items/fish.png" class="fish f32" style="display: none;"></div>
+                    <div class="col-25 fishcell"><img src="/img/items/fish.png" class="fish f33" style="display: none;"></div>
+                    <div class="col-25 fishcell"><img src="/img/items/fish.png" class="fish f34" style="display: none;"></div>
+                  </div>
+                </div>
+                <span id="pbzone"><div class="progressbar" data-progress="22.52"><span style="transform: translate3d(-77.37%, 0px, 0px); transition-duration: 0s;"></span></div></span>
+                              </div>
+              
+                            <div class="card">
+                <div class="card-content">
+                  <div class="card-content-inner" style="padding:5px" id="baitarea">      <div class="row" style="margin-bottom: 0">
+        <div class="col-45" style="font-size:13px">
+          Worms: <strong>484</strong>
+           <a href="changebait.php?from=fishing&amp;id=2" style="font-size:11px">Swap</a>        </div>
+        <div class="col-55" style="font-size:13px">Streak: <strong>300</strong> &nbsp; Best: <strong>300</strong></div>
+      </div>
+      <div id="last_bait" style="display:none">Worms</div>
+      </div>
+                </div>
+              </div>
+              
+                            
+              <div class="content-block">
+                <div class="buttons-row">
+                                                      <div class="button btnblue castnetbtnnc disable-select" data-mult="1" data-location="2" style="font-size:11px;line-height:20px;height:60px"><img src="/img/items/7748.png" style="width:14px;vertical-align:middle"> <strong class="nettype">Fishing Net</strong><br><span class="netcount">327</span> Left</div>                  
+                                  </div>
+              </div>
+              
+              
+             
+            
+              <div id="bait" style="display:none">Worms</div>
+              <div class="zone_id" style="display:none">2</div>
+            </div>
+            
+            
+                        
+            
+            
+            
+          
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+            
+        </div>
+    </div></div>
+<div class="toolbar disable-select" id="bottom" style="height:55px">
+<div class="disable-select" style="font-size: 11px; padding:10px; height:50px;" id="statszone"><div style="margin: 0;
+  position: absolute; background-color:#111111; 
+  top: 50%; border-top-left-radius:10px; border-top-right-radius:10px; border: 1px solid #555555;
+  -ms-transform: translateY(-50%); padding:5px;
+  transform: translateY(-50%);
+  line-height:18px; z-index:99999" class="aqp">
+  
+  <span><img src="/img/items/silver_17.png?1" alt="Silver" style="width:17px;vertical-align:middle"> 3,555,924 &nbsp;
+  <img src="/img/items/gold_17.png?1" alt="Gold" style="width:17px;vertical-align:middle"> 110 &nbsp;</span> 
+  <span style="color:red"><img src="/img/items/ac_17.png" style="width:17px;vertical-align:middle"> 514 &nbsp;</span> <hr>
+  
+  <a href="quest.php?id=401" style="color:#ffffff">
+<span><img src="/img/items/5629.png" class="itemimgmini" style="width:15px;vertical-align:middle;padding-right:1px">11/1 &nbsp;</span><span><img src="/img/items/5733.PNG" class="itemimgmini" style="width:15px;vertical-align:middle;padding-right:1px">2/2 &nbsp;</span><span style="color:red"><img src="/img/items/5829.PNG" class="itemimgmini" style="width:15px;vertical-align:middle;padding-right:1px">0/1 &nbsp;</span><br><span><img src="/img/items/ironring.png" class="itemimgmini" style="width:15px;vertical-align:middle;padding-right:1px">465/50 &nbsp;</span><span style="color:red"><img src="/img/items/5624.png" class="itemimgmini" style="width:15px;vertical-align:middle;padding-right:1px">0/10 &nbsp;</span><br>&nbsp;  </a>
+</div>
+</div>
+<div class="toolbar-inner">
+<a href="x" class="link">&nbsp;</a>
+<a href="x" class="link">&nbsp;</a>
+<a href="x" class="link">&nbsp;</a>
+<a href="x" class="link">&nbsp;</a>
+<a href="x" class="link">&nbsp;</a>
+<a href="x" class="link">&nbsp;</a>
+<a href="x" class="link">&nbsp;</a>
+<a href="x" class="link">&nbsp;</a>
+<a href="x" class="link">&nbsp;</a>
+<a href="x" class="link">&nbsp;</a>
+<a href="x" class="link">&nbsp;</a>
+<a href="x" class="link">&nbsp;</a>
+<a href="x" class="link">&nbsp;</a>
+<a href="index.php" class="button" id="homebtn" style="font-size:12px;padding-left:5px;padding-right:8px;"><i class="fa fa-fw fa-home"></i> Home</a>
+<a href="x" data-panel="right" id="openchatbtn" class="button open-panel button-highlight" style="font-size:12px;padding-left:5px;padding-right:8px;"><i class="fa fa-fw fa-comments"></i> Chat</a>
+</div>
+</div>
+</div>
+</div>
+<div id="logged_in_username" style="display:none">amelia99</div>
+<div id="logged_in_userid" style="display:none">351251</div>
+<div id="dark_mode" style="display:none">1</div>
+<div id="music" style="display:none">0</div>
+<div id="chat" style="display:none">1</div>
+<script>
+      /*
+        === begin absolutely real mailbox passwords ===
+        ace in the hole
+        best game yes
+        thom york
+        farm rpg is life
+        the cake is a lie
+        ff6 is the best ff
+        interceptor
+        hackermans
+        do you believe this?
+        === end absolutely real mailbox passwords ===
+      */
+    </script>
+<div id="tempdiv" style="display: none"></div>
+<script type="text/javascript" src="dist/js/framework7.js?v=612"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script src="js/snowfall.jquery.min.js"></script>
+<script src="js/fireworks.js?612"></script>
+<script type="text/javascript" src="js/index-app.php?612&amp;d=2023-11-04"></script>
+
+<script src="js/luxon.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+
+<div class="picker-modal picker-catch modal-in" style="display: block;">
+              <div class="toolbar">
+                <div class="toolbar-inner">
+                <div class="left">Tap to catch the fish!</div>
+                <div class="right">Hurry!</div>
+                </div>
+              </div>
+              <div class="picker-modal-inner">
+                <div class="content-block fishing-block" style="padding:0; margin:0; overflow-y:scroll; height:280px;">
+                  
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                                    <div class="fc" style="max-width: 300px; margin: 0 auto; background-color: #000000; border-radius: 40px">
+                  <div class="fishcaught finalcatch2" data-speed="2" data-id="2" style=""></div>
+                  </div>
+                  
+                
+                </div>
+              </div>
+            </div></body></html>

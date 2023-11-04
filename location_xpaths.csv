@@ -3,4 +3,5 @@ farm;//div[@class="view view-main navbar-through"]//a[contains(@href, 'xfarm.php
 inventory;//div[@class="view view-main navbar-through"]//a[@href='inventory.php']
 explore;//div[@class="view view-main navbar-through"]//a[@href='explore.php']
 fish;//div[@class="view view-main navbar-through"]//a[@href='fish.php']
-
+workshop;//div[@class="view view-main navbar-through"]//a[@href='workshop.php']
+town;//div[@class="view view-main navbar-through"]//a[@href='town.php']

@@ -10,4 +10,5 @@ login,https://farmrpg.com/#!/login.php
 home,https://farmrpg.com/#!/index.php
 fish,https://farmrpg.com/#!/fish.php
 vast ocean,https://farmrpg.com/#!/fishing.php?id=8
-
+workshop,https://farmrpg.com/#!/workshop.php
+town,https://farmrpg.com/#!/town.php
